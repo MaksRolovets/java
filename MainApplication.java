@@ -7,14 +7,14 @@ public class MainApplication {
 
         // если ничего не передали — сделаем пример вручную
         if (args.length == 0) {
-            args = new String[]{"ChewingGum/мята", "ChewingGum/арбуз"};
+            args = new String[]{"ChewingGum/мята", "ChewingGum/арбуз", "ChewingGum/лайм", "Grusha/лайм"};
         }
 
         for (String arg : args) {
-            String[] parts = arg.split("/");
-            if (parts[0].equals("ChewingGum")) {
-                breakfast[count++] = new ChewingGum(parts[1]);
-            }
+            String parts = arg;
+            //if (parts[0].equals("ChewingGum")) {
+            breakfast[count++] = new ChewingGum(parts);
+           // }
         }
 
         // Подсчёт жвачек

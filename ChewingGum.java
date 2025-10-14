@@ -9,6 +9,7 @@ public class ChewingGum extends Food {
     }
 
     public void consume() {
-        System.out.println("Жевательная резинка со вкусом " + flavour + " съедена");
+        String[] flav = flavour.split("/");
+        System.out.println(flav[0] + " со вкусом " + flav[1] + " съедена");
     }
 }
